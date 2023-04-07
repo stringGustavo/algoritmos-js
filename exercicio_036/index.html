@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 36</title>
+
+    <style>
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: #e4e4e4;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px #5a5959;
+        }
+
+        h1 {
+            margin: 0 auto;
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #5a5959;
+            background-color: #c7c7c7;
+            width: fit-content;
+        }
+
+        h2 {
+            color: #4e4e4e;
+            font-size: 1.5rem;
+        }
+
+        input {
+            background-color: #c7c7c7;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        button {
+            cursor: pointer;
+            display: flex;
+            margin: 10px auto;
+            background-color: rgb(161, 161, 161);
+            border: .5px solid;
+            padding: 7px;
+            box-shadow: 1px 2px 3px #5a5959;
+            border-radius: 5px;
+            transition: background-color .8s;
+        }
+
+        button:hover {
+            background-color: #0384fd;
+        }
+
+        .div {
+            padding: 10px;
+            box-shadow: 0px 1px 5px #5a5959;
+            background-color: #c4c4c4;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>36 - Em época de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas oferecendo desconto.<br>
+            Faça uma aplicação que possa entrar com o valor de um produto e imprimir o novo valor tendo em vista que o desconto foi de 9%.<br>
+            O valor do produto não pode ser menor ou igual a zero.
+        </h1>
+        <div style="width: fit-content;">
+            <label>Valor do produto: </label>
+            <input placeholder="Digite aqui..." type="number" id="valor"> <br> <br>
+        
+            <button id="btn">Calcular</button>
+	    </div>
+    </main>
+
+    <h2>&darr; Resultado do código aqui &darr;</h2>
+    <div id="resultado" class="div"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
