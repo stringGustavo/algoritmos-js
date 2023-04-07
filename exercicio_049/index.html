@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 49</title>
+
+    <style>
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: #e4e4e4;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px #5a5959;
+        }
+
+        h1 {
+            margin: 0 auto;
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #5a5959;
+            background-color: #c7c7c7;
+            width: fit-content;
+        }
+
+        h2 {
+            color: #4e4e4e;
+            font-size: 1.5rem;
+        }
+
+        input, select {
+            background-color: #c7c7c7;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        button {
+            cursor: pointer;
+            display: flex;
+            margin: 10px auto;
+            background-color: rgb(161, 161, 161);
+            border: .5px solid;
+            padding: 7px;
+            box-shadow: 1px 2px 3px #5a5959;
+            border-radius: 5px;
+            transition: background-color .8s;
+        }
+
+        button:hover {
+            background-color: #0384fd;
+        }
+
+        .div {
+            padding: 10px;
+            box-shadow: 0px 1px 5px #5a5959;
+            background-color: #c4c4c4;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>
+            49 - O cardápio de uma lanchonete é o seguinte:
+            <pre>
+  Código     Especificação     Preço Unitário
+   100      Cachorro quente         4,50
+   101       Bauru simples          4,50
+   102        Bauru c/ovo           5,50
+   103        Hambúrguer            6,50
+   104       Refrigerante           3,50</pre>
+
+            Crie uma aplicação que receba o item pedido, a quantidade e calcule o valor a ser pago por aquele lanche.<br>Considere que a cada execução somente será calculado um item.
+        </h1>
+        <div style="width: fit-content; text-align: center;">
+
+            <label>Quantidade:</label>
+            <input placeholder="Digite aqui..." type="number" id="quantidade"> <br> <br>
+
+            <label>Digite o Código:</label>
+            <select name="select" id="codigo">
+                <option value="100">100</option>
+                <option value="101">101</option>
+                <option value="102">102</option>
+                <option value="103">103</option>
+                <option value="104">104</option>
+            </select>
+
+            <button id="btn">Calcular</button>
+	    </div>
+    </main>
+
+    <h2>&darr; Resultado do código aqui &darr;</h2>
+    <div id="resultado" class="div"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
