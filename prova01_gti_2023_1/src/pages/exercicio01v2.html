@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01v2</title>
+
+    <style>
+        * {
+            font-family: monospace;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: #e4e4e4;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 5px #5a5959;
+        }
+
+        h1 {
+            margin: 0 auto;
+            font-size: 15px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px #5a5959;
+            background-color: #c7c7c7;
+            width: fit-content;
+        }
+
+        h2 {
+            color: #4e4e4e;
+            font-size: 1.5rem;
+        }
+
+        input {
+            background-color: #c7c7c7;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        
+        a {
+            color: #000000;
+            background-color: rgb(161, 161, 161);
+            cursor: pointer;
+            box-shadow: 1px 2px 3px #5a5959;
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 3px;
+            transition: background-color .5s;
+        }
+
+        button {
+            cursor: pointer;
+            display: flex;
+            margin: 10px auto;
+            background-color: rgb(161, 161, 161);
+            border: .5px solid;
+            padding: 7px;
+            box-shadow: 1px 2px 3px #5a5959;
+            border-radius: 5px;
+            transition: background-color .8s;
+        }
+
+        button:hover, a:hover{
+            background-color: #0384fd;
+        }
+
+        .div {
+            padding: 10px;
+            box-shadow: 0px 1px 5px #5a5959;
+            background-color: #c4c4c4;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>Ex01 (v2) - Crie uma aplicação que receba dois números obrigatoriamente maiores que zero e exiba as seguintes mensagens:<br> - Os números digitados foram ... e ... .<br> - A raiz quadrada dos números são ... e ... .<br> - A raiz sétima dos números são ... e ... .</h1>
+
+        <div style="width: fit-content; text-align: center;">
+            <label for="primeiroNumero">Primeiro Número:</label>
+            <input placeholder="Digite aqui..." type="number" id="primeiroNumero"> <br> <br>
+        
+            <label for="segundoNumero">Segundo Número:</label>
+            <input placeholder="Digite aqui..." type="number" id="segundoNumero"> <br> <br>
+        
+            <button id="btn">Calcular</button>
+	    </div>
+        <a href="../../index.html">&larr; Voltar</a>
+    </main>
+
+    <h2>&darr; Resultado do código aqui &darr;</h2>
+    <div id="resultado" class="div"></div>
+
+    <script src="../javascript/exercicio01v2.js"></script>
+</body>
+</html>
