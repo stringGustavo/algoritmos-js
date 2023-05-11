@@ -1,18 +1,19 @@
-let valor = document.getElementById('valor');
 let div = document.getElementById('resultado');
 let btn = document.getElementById('btn');
 
 function calcular() {
-    if(valor.value >= 0) {
+    let valor = document.getElementById('valor').value;
 
-        if(valor.value % 2 == 0) {
-            div.innerHTML = `<p style="color: blue;">O número digitado é PAR!</p>`;
+    if(valor > 0) {
+
+        if(valor % 2 == 0) {
+            div.innerHTML = `<p>O número digitado é PAR!</p>`;
         } else {
-            div.innerHTML = `<p style="color: blue;">O número digitado é ÍMPAR!</p>`;
+            div.innerHTML = `<p>O número digitado é ÍMPAR!</p>`;
         }
         
     } else {
-        div.innerHTML = `<p style="color: red;">(ERRO 0001) Digite um número positivo.</p>`;
+        div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
     }
 }
 

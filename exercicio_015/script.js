@@ -11,6 +11,9 @@ ladoC = parseFloat(ladoC);
 
 let volume = ladoA * ladoB * ladoC;
 
-div.innerHTML = `<p style="color: blue;">Volume: ${volume}.</p>`;
-
-console.log(`Volume: ${volume}.`);
+if(volume > 0) {
+    div.innerHTML = `<p>Volume: ${volume}.</p>`;
+    console.log(`Volume: ${volume}.`)   
+} else {
+    div.innerHTML = `<p style="color: red;">ERRO - Valor Inválido digitado.</p>`;
+}

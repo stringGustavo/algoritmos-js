@@ -1,20 +1,19 @@
-let numero = document.getElementById('valor');
 let div = document.getElementById('resultado');
 let btn = document.getElementById('btn');
 
 function calcular() {
     div.innerHTML = "";
+    let numero = document.getElementById('valor').value;
+
     let limite = 20;
 
-    if(numero.value < 10) {
-        while(numero.value <= limite) {
-            document.getElementById('resultado').style.color = "blue";
+    if(numero < 10) {
+        while(numero <= limite) {
             div.innerHTML += `${limite} `;
             limite--;
         }
     } else {
-        document.getElementById('resultado').style.color = "red";
-        div.innerHTML = `(ERRO 001) Valor Inválido. Digite um número menor que 10!`;
+        div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
     }
 }
 

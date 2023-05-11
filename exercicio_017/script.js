@@ -8,6 +8,9 @@ altura = parseFloat(altura);
 
 let volume = areaBase * altura;
 
-div.innerHTML = `<p style="color: blue;">O volume do triângulo é: ${volume}.</p>`;
-
-console.log(`O volume do triângulo é: ${volume}.`);
+if(areaBase > 0 && altura > 0) {
+    div.innerHTML = `<p>O volume do triângulo é: ${volume}.</p>`;
+    console.log(`O volume do triângulo é: ${volume}.`);
+} else {
+    div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
+}

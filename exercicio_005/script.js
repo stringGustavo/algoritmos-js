@@ -13,6 +13,6 @@ numero_5 = parseInt(numero_5);
 
 let soma = numero_1 + numero_2 + numero_3 + numero_4 + numero_5;
 
-div.innerHTML = `<p style="color: blue;">Os números digitados foram ${numero_1}, ${numero_2}, ${numero_3}, ${numero_4}, ${numero_5} e sua soma é ${soma}.</p>`;
+div.innerHTML = `<p>Os números digitados foram ${numero_1}, ${numero_2}, ${numero_3}, ${numero_4}, ${numero_5} e sua soma é ${soma}.</p>`;
 
 console.log(`Os números digitados foram ${numero_1}, ${numero_2}, ${numero_3}, ${numero_4}, ${numero_5} e sua soma é ${soma}.`);

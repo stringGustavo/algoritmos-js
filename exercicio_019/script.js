@@ -7,6 +7,9 @@ altura = parseFloat(altura);
 
 let volume = 3.14 * (raio * raio) * altura;
 
-div.innerHTML = `<p style="color: blue;">O volume do Cilindro é: ${volume}.</p>`;
-
-console.log(`O volume do Cilindro é: ${volume}.`);
+if(raio > 0 && altura > 0) {
+    div.innerHTML = `<p>O volume do Cilindro é: ${volume.toFixed(3)}.</p>`;
+    console.log(`O volume do Cilindro é: ${volume.toFixed(3)}.`);
+} else {
+    div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
+}

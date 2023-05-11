@@ -1,18 +1,19 @@
-let valor = document.getElementById('valor');
 let div = document.getElementById('resultado');
 let btn = document.getElementById('btn');
 
 function calcular() {
     div.innerHTML = "";
+    let valor = document.getElementById('valor').value;
+
     let contador = 0;
     
-    if(valor.value > 0) {
-        while(contador <= valor.value) {
+    if(valor > 0) {
+        while(contador <= valor) {
             div.innerHTML += `${contador} `;
             contador++;
         }
     } else {
-        div.innerHTML = `<p style="color: red;">(ERRO 001) Digite um valor maior que zero!</p>`;
+        div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
     }
 }
 

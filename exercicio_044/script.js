@@ -1,32 +1,28 @@
-let valorA = document.getElementById('valorA');
-let valorB = document.getElementById('valorB');
 let div = document.getElementById('resultado');
 let btn = document.getElementById('btn');
 
 function calcular() {
     div.innerHTML = '';
+    let valorA = document.getElementById('valorA').value;
+    let valorB = document.getElementById('valorB').value;
 
-    let a = valorA.value;
-    let b = valorB.value;
     let somaPares = 0;
 
-    if( a > b) {
-        let aux = a;
-        a = b;
-        b = aux;
+    if( valorA > valorB) {
+        let auxiliar = valorA;
+        valorA = valorB;
+        valorB = auxiliar;
     }
 
-    while(a <= b) {
-        document.getElementById('resultado').style.color = "blue";
-        
-        if(a % 2 == 0) {
-            div.innerHTML += `'${a}' `;
-            somaPares += parseInt(a);
+    while(valorA <= valorB) {
+        if(valorA % 2 == 0) {
+            div.innerHTML += `[${valorA}] `;
+            somaPares += parseInt(valorA);
         } else {
-            div.innerHTML += `${a} `;
+            div.innerHTML += `${valorA} `;
         }
 
-        a++;
+        valorA++;
     }
 
     div.innerHTML += `<br><br>Soma dos números pares: ${somaPares}.`;

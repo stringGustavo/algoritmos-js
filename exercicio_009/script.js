@@ -8,7 +8,7 @@ altura = parseInt(altura);
 let area = base * altura;
 let perimetro = base + base + altura + altura;
 
-div.innerHTML = `<p style="color: blue;">Área: ${area}.<br>Perímetro: ${perimetro}.`;
+div.innerHTML = `<p>Área: ${area}.<br>Perímetro: ${perimetro}.`;
 
 console.log(`Área: ${area}.`);
 console.log(`Perímetro: ${perimetro}.`);

@@ -10,7 +10,7 @@ function calcular() {
         numero++;
     }
 
-    div.innerHTML = `<p style="color: blue;">Soma dos números de 0 à 100: ${soma}.</p>`;
+    div.innerHTML = `<p>Soma dos números de 0 à 100: ${soma}.</p>`;
 }
 
 btn.addEventListener('click', calcular);

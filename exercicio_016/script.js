@@ -9,8 +9,17 @@ baseMenor = parseFloat(baseMenor);
 let altura = prompt('Digite o valor da altura do trapézio: ');
 altura = parseFloat(altura);
 
+if(baseMenor > baseMaior) {
+    let auxiliar = baseMenor;
+    baseMenor = baseMaior;
+    baseMaior = auxiliar;
+}
+
 let area = (((baseMaior + baseMenor) * altura) / 2);
 
-div.innerHTML = `<p style="color: blue;">A Área do trapézio é: ${area}.</p>`;
-
-console.log(`A Área do trapézio é: ${area}.`);
+if(baseMaior > 0 && baseMenor > 0 && altura > 0) {
+    div.innerHTML = `<p>A Área do trapézio é: ${area}.</p>`;
+    console.log(`A Área do trapézio é: ${area}.`);
+} else {
+    div.innerHTML = `<p style="color: red;">ERRO - Valor inválido digitado.</p>`;
+}
