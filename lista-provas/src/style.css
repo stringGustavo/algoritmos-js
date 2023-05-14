@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code';
+}
+
+.gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
+}
+
+.nav {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2.1rem;
+    margin: 10px 0;
+}
+
+main {
+    margin-top: 20px;
+}
+
+main h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+}
+
+.change-link {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.link-off {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 1px rgb(0, 45, 75) solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    transition: 0.8s;
+    
+}
+
+.link:hover {
+    box-shadow: 0 0 50px rgb(18, 65, 151);
+    border: 1px rgb(0, 117, 196) solid;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.link-container {
+    margin: 30px auto;
+}
+
+/* scrollbar */
+
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255, 0.2);
+  }

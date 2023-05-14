@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+    .link {
+        font-size: 3rem;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 600px) {
+    .link {
+        font-size: 2rem;
+        transition: 1s;
+    }
+}
