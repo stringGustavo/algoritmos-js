@@ -1,13 +1,24 @@
 @media (max-width: 700px) {
     .link {
-        font-size: 3rem;
+        font-size: 2rem;
         transition: 1s;
+        padding: 10px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
     .link {
         font-size: 2rem;
         transition: 1s;
+        padding: 10px;
+    }
+    
+    .center {
+        display: block;
+        text-align: center;
+    }
+
+    .mb {
+        margin: 50px;
     }
 }

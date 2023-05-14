@@ -8,7 +8,6 @@
 
 body {
     background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000220)) fixed;
-
 }
 
 main {
@@ -35,7 +34,8 @@ h1 {
 
 h2 {
     color: #4e4e4e;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
 .input-center {
