@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
-
 * {
     box-sizing: border-box;
-    font-family: 'Fira Code';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -82,7 +80,7 @@ button {
     margin: 10px auto;
     background-color: rgba(44, 44, 44, 0.7);
     border: 1px solid rgb(0, 117, 196);
-    padding: 7px;
+    padding: 5px;
     border-radius: 5px;
     transition: .8s;
 }
