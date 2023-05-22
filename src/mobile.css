@@ -6,9 +6,9 @@
     }
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 1060px) { 
     .link {
-        font-size: 2rem;
+        font-size: 3rem;
         transition: 1s;
         padding: 10px;
     }

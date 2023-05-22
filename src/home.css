@@ -17,7 +17,7 @@ body {
 }
 
 .gradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -27,17 +27,32 @@ body {
 
 .link {
     font-size: 2.9rem;
-    color: rgb(255, 255, 255);
-    background-color: rgba(44, 44, 44, 0.7);
-    border: 1px rgb(0, 45, 75) solid;
     border-radius: 5px;
     padding: 15px;
     margin: 20px;
     transition: 0.8s;
 }
 
-.link:hover {
-    box-shadow: 0 0 50px rgb(18, 65, 151);
+.omega {
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 1px rgb(75, 0, 0) solid;
+}
+
+.omega:hover {
+    box-shadow: 0 0 30px rgb(151, 18, 18);
+    border: 1px rgb(196, 0, 0) solid;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lists {
+    color: rgb(255, 255, 255);
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 1px rgb(0, 45, 75) solid;
+}
+
+.lists:hover {
+    box-shadow: 0 0 30px rgb(18, 65, 151);
     border: 1px rgb(0, 117, 196) solid;
     background-color: rgba(0, 0, 0, 0.7);
 }

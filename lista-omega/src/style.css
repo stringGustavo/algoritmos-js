@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
     font-size: 1rem;
+    color: rgb(255, 255, 255);
 }
 
 h1 {
     font-size: 2.5rem;
- }
+    transition: color 10s;
+}
 
 .gradient {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(32, 0, 0))) fixed;
 }
 
 .nav {
-    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 2.1rem;
     margin: 10px 0;
@@ -28,7 +27,6 @@ main {
 }
 
 main h1 {
-    color: rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -53,20 +51,18 @@ main h1 {
 }
 
 .link {
-    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: rgba(44, 44, 44, 0.7);
-    border: 1px rgb(0, 45, 75) solid;
+    background-color: rgba(24, 24, 24, 0.7);
+    border: 1px rgb(75, 0, 0) solid;
     border-radius: 5px;
     padding: 8px;
     margin: 10px;
     transition: 0.8s;
-    
 }
 
 .link:hover {
-    box-shadow: 0 0 50px rgb(18, 65, 151);
-    border: 1px rgb(0, 117, 196) solid;
+    box-shadow: 0 0 30px rgb(151, 18, 18);
+    border: 1px rgb(196, 0, 0) solid;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
