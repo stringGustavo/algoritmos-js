@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style01.css">
+    <title>Exercício 53</title>
+</head>
+<body>
+    <main>
+        <h1>53 - Um professor deseja criar uma aplicação pelo qual possa escolher que tipo de média deseja calcular a partir de três notas.<br><br>Você como programador deve criar esta aplicação que leia as notas, a opção escolhida pelo usuário e calcule a média:<br><br>1 - Aritmética.<br>2 - Ponderada (pesos 3, 3, 4).</h1>
+        <div class="input-center">
+            <input placeholder="Primeira nota" type="number" id="primeiraNota"> <br> <br>
+        
+            <input placeholder="Segunda nota" type="number" id="segundaNota"> <br> <br>
+
+            <input placeholder="Terceira nota" type="number" id="terceiraNota"> <br> <br>
+        
+            <div class="input-center">
+                <select name="select" id="media">
+                    <option value="1">Média Aritmética</option>
+                    <option value="2">Média Ponderada</option>
+                </select>
+            </div>
+
+            <button id="btn">Calcular</button>
+	    </div>
+
+        <div class="buttons">
+            <a href="../../lista/index.html">&larr; Voltar</a>
+        </div>
+    
+        <div class="buttons next">
+            <a href="../exercicio_52/index.html">&larr; Anterior</a>
+            <a href="../exercicio_54/index.html">Próximo &rarr;</a>
+    </main>
+
+    <h2>&darr; Resultado do código aqui &darr;</h2>
+    <div id="resultado" class="div"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

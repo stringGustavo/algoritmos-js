@@ -3,37 +3,29 @@
         font-size: 2.2rem;
         transition: 0.5s;
     }
-
-    .link {
-        font-size: 0.8rem;
-    }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
     h1 {
         font-size: 2rem;
         transition: 0.5s;
     }
-    
-    .link {
-        font-size: 0.8rem;
-        margin: 0 5px;
+
+    .exercices {
+        grid-template-areas: "exercices exercices exercices exercices";
+        grid-gap: 30px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     h1 {
         font-size: 1.8rem;
         transition: 0.5s;
     }
-
-    .link {
-        font-size: 0.7rem;
-        margin: 0;
-    }
-
-    .link-container {
-        margin: 20px auto;
+    
+    .exercices {
+        grid-template-areas: "exercices exercices exercices";
+        grid-gap: 30px;
     }
 }
 
@@ -44,25 +36,23 @@
     }
     
     .link {
-        font-size: 0.5rem;
-        margin: 0 5px;
+        font-size: 0.9rem;
     }
 
-    .link-container {
-        margin: 20px auto;
+    .exercices {
+        grid-gap: 30px;
     }
 }
 
 @media (max-width: 450px) {
-    .link {
-        font-size: 0.4rem;
-        margin: 0;
+    h1 {
+        font-size: 1.4rem;
+        transition: 0.5s;
     }
-}
 
-@media (max-width: 380px) {
-    .link {
-        font-size: 0.3rem;
-        margin: 0;
+    .exercices {
+        grid-template-areas: "exercices exercices";
+        grid-gap: 10px;
     }
+
 }

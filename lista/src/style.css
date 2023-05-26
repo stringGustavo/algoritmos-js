@@ -11,6 +11,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+main {
+    margin-top: 50px;
+}
+
 .gradient {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
 }
@@ -22,19 +26,19 @@ h1 {
     margin: 10px 0;
 }
 
-main {
-    margin-top: 20px;
-}
-
-.center {
-    display: flex;
+.exercices {
     text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: "exercices exercices exercices exercices exercices";
 }
 
 .change-link {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
+    margin: 0 15px;
 }
 
 .link {
@@ -43,9 +47,7 @@ main {
     border: 1px rgb(0, 45, 75) solid;
     border-radius: 5px;
     padding: 8px;
-    margin: 20px;
     transition: 0.8s;
-    
 }
 
 .link:hover {
@@ -54,8 +56,10 @@ main {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.link-container {
-    margin: 30px auto;
+.center {
+    text-align: center;
+    margin: 40px auto 20px;
+    justify-content: center;
 }
 
 /* scrollbar */

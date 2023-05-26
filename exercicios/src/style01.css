@@ -37,23 +37,6 @@ h2 {
     text-align: center;
 }
 
-.msg {
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.input-center {
-    width: fit-content;
-    margin: 0 auto;
-}
-
-#tipo, #codigo, #media {
-    color: white;
-    background-color: #000000;
-    border-radius: 5px;
-    border: 1px rgb(0, 117, 196) solid;
-    margin-bottom: 55px;
-}
 
 input {
     color: rgb(190, 190, 190);
@@ -92,6 +75,37 @@ button:hover, a:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.msg {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.input-center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#tipo, #codigo, #media {
+    color: white;
+    background-color: #000000;
+    border-radius: 5px;
+    border: 1px rgb(0, 117, 196) solid;
+    margin-bottom: 55px;
+}
+
+.buttons {
+    margin: 15px 0;
+}
+
+.next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.off {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
 
 .div {
     justify-content: space-around;

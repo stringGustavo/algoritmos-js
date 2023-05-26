@@ -1,7 +1,7 @@
 .numeros, .maior, .menor {
-    font-size: 0.7rem;
     border: 1px rgb(0, 117, 196) solid;
     padding: 5px 10px;
+    margin: 5px;
     border-radius: 5px;
     text-align: center;
 }
