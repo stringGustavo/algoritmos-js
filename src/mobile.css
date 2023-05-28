@@ -12,13 +12,4 @@
         transition: 1s;
         padding: 10px;
     }
-    
-    .center {
-        display: block;
-        text-align: center;
-    }
-
-    .mb {
-        margin: 50px;
-    }
 }

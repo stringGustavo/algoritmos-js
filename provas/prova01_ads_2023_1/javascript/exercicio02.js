@@ -7,7 +7,7 @@ function calcular () {
     let contador = 1;
     let valorFinal = 0;
 
-    if(valor > 0 || minutos > 0) {
+    if(valor > 0 && minutos > 0) {
         for(let i = 1; i <= minutos; i++) {
             if(i % 15 == 0) {
                 contador++;
