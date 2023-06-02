@@ -1,0 +1,15 @@
+.numeros, .maior, .menor {
+    border: 1px rgb(0, 117, 196) solid;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.block {
+    display: block;
+}

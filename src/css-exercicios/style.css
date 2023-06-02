@@ -6,14 +6,18 @@
 }
 
 body {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(33, 0, 0))) fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
 }
 
 main {
     background-color: rgb(19, 19, 19);
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(90, 0, 0);
+    border: 1px solid rgb(0, 54, 90);
+}
+
+h1, input, a, button, .div, #tipo, #codigo, #media {
+    border: 1px solid rgb(0, 117, 196);
 }
 
 h1 {
@@ -22,8 +26,7 @@ h1 {
     font-weight: 500;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid rgb(196, 0, 0);
-    box-shadow: 0px 1px 10px rgb(151, 18, 18);
+    box-shadow: 0px 1px 10px rgb(18, 65, 151);
     border-radius: 10px;
     background-color: rgba(44, 44, 44, 0.7);
     width: fit-content;
@@ -31,7 +34,6 @@ h1 {
 }
 
 h2 {
-    color: rgb(78, 78, 78);
     font-weight: 400;
     font-size: 1.3rem;
     text-align: center;
@@ -63,14 +65,12 @@ h2 {
 #tipo, #codigo, #media {
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px rgb(196, 0, 0) solid;
     margin-bottom: 55px;
 }
 
 input {
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
-    border: 1px solid rgb(196, 0, 0);
     padding: 5px;
 }
 
@@ -78,7 +78,6 @@ a {
     background-color: rgba(44, 44, 44, 0.7);
     cursor: pointer;
     text-decoration: none;
-    border: 1px solid rgb(196, 0, 0);
     border-radius: 5px;
     padding: 3px;
     transition: .5s;
@@ -89,24 +88,23 @@ button {
     display: flex;
     margin: 10px auto;
     background-color: rgba(44, 44, 44, 0.7);
-    border: 1px solid rgb(196, 0, 0);
+    border: 1px rgb(0, 117, 196) solid;
     padding: 5px;
     border-radius: 5px;
     transition: .8s;
 }
 
 button:hover, a:hover {
-    box-shadow: 0 0 15px rgb(151, 18, 18);
-    border: 1px rgb(196, 0, 0) solid;
+    box-shadow: 0 0 15px rgb(18, 65, 151);
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .div {
     justify-content: space-around;
     padding: 10px;
-    box-shadow: 0px 1px 10px rgb(151, 18, 18);
+    box-shadow: 0px 1px 10px rgb(18, 65, 151);
     background-color: rgba(44, 44, 44, 0.7);
-    border: 1px rgb(196, 0, 0) solid;
+    border: 1px rgb(0, 117, 196) solid;
     width: 100%;
     border-radius: 5px;
 }

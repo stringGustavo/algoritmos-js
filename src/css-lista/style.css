@@ -4,45 +4,51 @@
     box-sizing: border-box;
     font-family: monospace;
     font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 h1 {
     font-size: 2.5rem;
- }
+}
+
+main {
+    margin: 50px;
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
 
 .gradient {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0)), to(rgb(0, 2, 32))) fixed;
 }
 
 .nav {
-    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 2.1rem;
     margin: 10px 0;
 }
 
-main {
-    margin-top: 20px;
-}
-
-main h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.center {
+.exercices {
     display: flex;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .change-link {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
+    margin: 0 15px;
 }
 
-.mb {
-    margin-bottom: 30px;
+.link {
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 1px rgb(0, 45, 75) solid;
+    border-radius: 5px;
+    padding: 8px;
+    transition: 0.8s;
 }
 
 .link-off {
@@ -50,16 +56,8 @@ main h1 {
     cursor: not-allowed;
 }
 
-.link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    background-color: rgba(44, 44, 44, 0.7);
-    border: 1px rgb(0, 45, 75) solid;
-    border-radius: 5px;
-    padding: 8px;
-    margin: 10px;
-    transition: 0.8s;
-    
+.link-ex {
+    margin: 33px;
 }
 
 .link:hover {
@@ -68,12 +66,12 @@ main h1 {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.link-container {
-    margin: 30px auto;
+.back {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 /* scrollbar */
-
 body {
     overflow: overlay;
 }
@@ -89,4 +87,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 255, 255, 0.2);
-  }
+}

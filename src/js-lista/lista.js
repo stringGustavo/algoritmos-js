@@ -17,9 +17,9 @@ let section = document.getElementById('links');
 function carregarLinks() {
   for (let i = 1; i <= 110; i++) {
     if(i < 10) {
-      section.innerHTML += `<a class="link" href="../exercicios/exercicio_${i}/index.html">Exercício 0${i}</a>`;
+      section.innerHTML += `<a class="link link-ex" href="../exercicios/exercicio_${i}/index.html">Exercício 0${i}</a>`;
     } else {
-      section.innerHTML += `<a class="link" href="../exercicios/exercicio_${i}/index.html">Exercício ${i}</a>`;
+      section.innerHTML += `<a class="link link-ex" href="../exercicios/exercicio_${i}/index.html">Exercício ${i}</a>`;
     }
   }
 }
