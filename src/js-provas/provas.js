@@ -21,11 +21,23 @@ function carregarLinks() {
   let gtiP2 = document.getElementById('gti-p2-links');
 
   for (let i = 1; i <= 3; i++) {
-    adsP1.innerHTML += `<a class="link link-ex" href="../provas/prova01_ads_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>`;
-    gtiP1.innerHTML += `<a class="link link-ex" href="../provas/prova01_gti_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>`;
+    adsP1.innerHTML += `
+    <div>
+      <a class="link link-ex" href="../provas/prova01_ads_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
+    </div>`
+    gtiP1.innerHTML += `
+    <div>
+      <a class="link link-ex" href="../provas/prova01_gti_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
+    </div>`;
 
-    adsP2.innerHTML += `<a class="link link-off link-ex" href="#">Exercício ??</a>`;
-    gtiP2.innerHTML += `<a class="link link-off link-ex" href="#">Exercício ??</a>`;
+    adsP2.innerHTML += `
+    <div>
+      <a class="link link-off link-ex" href="#">Exercício ??</a>
+    </div>`;
+    gtiP2.innerHTML += `
+    <div>
+      <a class="link link-off link-ex" href="#">Exercício ??</a>
+    </div>`;
   }
 }
 

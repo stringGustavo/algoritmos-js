@@ -11,6 +11,6 @@ h1::-webkit-scrollbar {
 }
 
 h1 {
-    height: 150px;
+    height: 120px;
     overflow-y: scroll;
 }

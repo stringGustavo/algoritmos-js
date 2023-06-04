@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../src/css-exercicios/style.css">
+    <link rel="stylesheet" href="../../src/css-exercicios/scroll.css">
+    <title>Exercício 81</title>
+</head>
+<body>
+    <main>
+        <h1>
+            81 - Crie uma aplicação que receba vários registros de uma pessoa.<br>
+            O registro deve conter nome, idade, peso e altura.<br>
+            Esses registros devem ser exibidos em uma tabela e para cada registro inserido também
+            deve ser exibido a quantidade de registros que possuam a idade maior que 18 anos.<br>[Inserir o registro na tabela - até 6pts
+            , Exibir a quantidade de registros com mais de 18 anos - até 4pts]
+        </h1>
+        <div class="input-center">
+            <input placeholder=" Insira seu nome..." type="text" id="nome">
+        
+            <input placeholder=" Insira sua idade..." type="number" id="idade"> <br> <br>
+
+            <input placeholder=" Insira seu peso..." type="number" id="peso">
+            
+            <input placeholder=" Insira sua altura..." type="number" id="altura"> <br> <br>
+        
+            <button id="btn">Cadastrar</button>
+	    </div>
+
+        <div class="buttons">
+            <a href="../../lista/index.html">&larr; Voltar</a>
+        </div>
+
+        <div class="buttons next">
+            <a href="../exercicio_80/index.html">&larr; Anterior</a>
+            <a href="../exercicio_82/index.html">Próximo &rarr;</a>
+        </div>
+    </main>
+
+    <h2>&darr; Resultado do código aqui &darr;</h2>
+    <div class="div">
+        <table id="tabela" class="input-center">
+            <tr>
+                <td class="description">Nome</td>
+                <td class="description">Idade</td>
+                <td class="description">Peso</td>
+                <td class="description">Altura</td>
+            </tr>
+
+            <article id="resultado" class="input-center"></article>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

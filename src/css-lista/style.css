@@ -1,4 +1,5 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,17 +9,57 @@
     color: rgb(255, 255, 255);
 }
 
+input {
+    font-size: 1rem;
+    width: 10em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid rgb(0, 117, 196);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+button {
+    width: 6em;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: rgba(44, 44, 44, 0.7);
+    border: 1px rgb(0, 117, 196) solid;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .8s;
+}
+
+button:hover, a:hover {
+    box-shadow: 0 0 15px rgb(18, 65, 151);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 h1 {
     font-size: 2.5rem;
 }
 
 main {
-    margin: 50px;
+    margin: 2em 2em;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+
 }
 
 .title {
     text-align: center;
-    margin: 30px 0;
+    padding: 2.5rem;
 }
 
 .gradient {
@@ -32,9 +73,17 @@ main {
 }
 
 .exercices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    gap: 5rem 0;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.test {
+    display: grid;
+    gap: 1rem 0;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .change-link {
@@ -56,10 +105,6 @@ main {
     cursor: not-allowed;
 }
 
-.link-ex {
-    margin: 33px;
-}
-
 .link:hover {
     box-shadow: 0 0 50px rgb(18, 65, 151);
     border: 1px rgb(0, 117, 196) solid;
@@ -69,6 +114,10 @@ main {
 .back {
     text-align: center;
     margin-bottom: 1em;
+}
+
+#back-top {
+    visibility: visible;
 }
 
 /* scrollbar */
@@ -87,4 +136,11 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 255, 255, 0.2);
+}
+
+/* remove input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

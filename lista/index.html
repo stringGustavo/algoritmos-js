@@ -18,7 +18,13 @@
 
         <div class="change-link">
             <a class="link" href="../index.html">&larr; Voltar</a>
+            <input id="exercices" placeholder=" Nº do exercício" type="number" onfocus="this.value=''">
             <a class="link" href="../lista-provas/provas.html">Provas &rarr;</a>
+        </div>
+
+        <div class="button-container">
+            <button type="button" id="search">Pesquisar</button>
+            <button type="button" id="clear">Limpar</button>
         </div>
     </header>
 
@@ -27,7 +33,7 @@
     </main>
 
     <div class="back">
-        <a class="link" href="#top">Voltar ao topo &uarr;</a>
+        <a id="back-top" class="link" href="#top">Voltar ao topo &uarr;</a>
     </div>
 
     <script src="../src/js-lista/lista.js"></script>
