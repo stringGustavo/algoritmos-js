@@ -121,3 +121,21 @@ button:hover, a:hover {
     font-size: 0.6rem;
     margin: 0 2px;
 }
+
+/* scrollbar */
+body {
+    overflow: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255, 0.2);
+}

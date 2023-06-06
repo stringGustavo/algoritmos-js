@@ -53,6 +53,10 @@
         transition: 0.5s;
     }
 
+    input {
+        width: 7.5em;
+    }
+
     .link {
         font-size: 0.9rem;
     }
