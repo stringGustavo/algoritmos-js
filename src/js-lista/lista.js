@@ -20,7 +20,7 @@ function escrever() {
 function carregarLinks() {
   section.innerHTML = '';
 
-  for (let i = 1; i <= 110; i++) {
+  for (let i = 1; i <= 87; i++) {
     if (i < 10) {
       section.innerHTML += `
       <div>
@@ -40,7 +40,7 @@ carregarLinks();
 function pesquisarExercicio() {
   let valorPesquisa = document.getElementById('exercices').value;
   
-  if (valorPesquisa > 0 && valorPesquisa <= 110) {
+  if (valorPesquisa > 0 && valorPesquisa <= 87) {
     backTop.style.visibility = "hidden";
     section.style.display = "flex";
 

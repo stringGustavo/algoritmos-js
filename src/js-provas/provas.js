@@ -23,20 +23,23 @@ function carregarLinks() {
   for (let i = 1; i <= 3; i++) {
     adsP1.innerHTML += `
     <div>
-      <a class="link link-ex" href="../provas/prova01_ads_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
+      <a class="link" href="../provas/prova01_ads_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
     </div>`
     gtiP1.innerHTML += `
     <div>
-      <a class="link link-ex" href="../provas/prova01_gti_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
+      <a class="link" href="../provas/prova01_gti_2023_1/pages/exercicio0${i}.html">Exercício 0${i}</a>
     </div>`;
 
-    adsP2.innerHTML += `
+    if (i == 1) {
+      adsP2.innerHTML += `
     <div>
-      <a class="link link-off link-ex" href="#">Exercício ??</a>
+      <a class="link link-off" href="#">Exercício 0${i}</a>
     </div>`;
+    }
+
     gtiP2.innerHTML += `
     <div>
-      <a class="link link-off link-ex" href="#">Exercício ??</a>
+      <a class="link link-off" href="#">Exercício 0${i}</a>
     </div>`;
   }
 }
